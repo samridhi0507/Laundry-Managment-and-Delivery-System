@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>L.M.A.D.S</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  
+<div id="login-box">
+  <div class="left">
+    <h1 id='status'>login</h1>
+    <input type="text" id="username" name="username" placeholder="username" />
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    
+    <button class="login" id="login" onclick="window.location.href='index.html'">Login</button>
+
+    
+
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google" id="googleBtn" >Log in with Google+</button>
+
+  </div>
+  <div class="or">OR</div>
+</div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js'
+
+  // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+  import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js'
+
+  // Add Firebase products that you want to use
+  import { getAuth, GoogleAuthProvider , signInWithRedirect} from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js'
+  import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'
+
+  console.log(initializeApp);
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAB8aC2EUyuLB5hMsdqrY_ZwkNoSQL7osc",
+  authDomain: "laundry-system-e7505.firebaseapp.com",
+  databaseURL: "https://laundry-system-e7505-default-rtdb.firebaseio.com",
+  projectId: "laundry-system-e7505",
+  storageBucket: "laundry-system-e7505.appspot.com",
+  messagingSenderId: "547803642808",
+  appId: "1:547803642808:web:fbbf849be4a81d978aad4d"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const provider = new GoogleAuthProvider(app);
+  const auth = getAuth(app);
+
+  const btn  = document.getElementById("googleBtn")
+
+  btn.addEventListener('click',(e) => {
+    e.preventDefault()
+    signInWithRedirect(auth, provider).then((result) => {
+    // This gives you a Google Access Token. You can use it to access Google APIs.
+    getRedirectResult(auth)
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    alert(user.displayName);
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+  })
+
+  /*const database = getDatabase(app);
+  const auth = getAuth();
+
+signUp.addEventListener('click',(e) => {
+
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  var username = document.getElementById('username').value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+     // Signed in 
+      const user = userCredential.user;
+
+      set(ref(database, 'users/' + user.uid),{
+          username: username,
+          email: email
+      })
+
+      alert('user created!');
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      alert(errorMessage);
+    // ..
+    });
+
+});
+
+ login.addEventListener('click',(e)=>{
+   var email = document.getElementById('email').value;
+   var password = document.getElementById('password').value;
+
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+
+        const dt = new Date();
+         update(ref(database, 'users/' + user.uid),{
+          last_login: dt,
+        })
+
+         alert('User loged in!');
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+  });
+
+ });
+
+const user = auth.currentUser;
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    //bla bla bla
+    // ...
+  } else {
+    // User is signed out
+    // ...
+    //bla bla bla
+  }
+});
+
+logout.addEventListener('click',(e)=>{
+
+   signOut(auth).then(() => {
+     // Sign-out successful.
+     alert('user loged out');
+   }).catch((error) => {
+     // An error happened.
+     const errorCode = error.code;
+     const errorMessage = error.message;
+
+        alert(errorMessage);
+   });
+
+});
+*/
+</script>
+</html>

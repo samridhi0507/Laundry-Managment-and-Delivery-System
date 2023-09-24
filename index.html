@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Laundry Management System</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA_Compstible" content="IE=edge">
+  <meta viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="\style.css">
+  <!--AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Fontawesome CDN Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />"
+
+  <!-- Scrollbar Settings-->
+  <style>
+    html::-webkit-scrollbar {
+      width: 1vw;
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background: rgb(37, 37, 37);
+      border-radius: 10px;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!--Navigation bar start-->
+  <header>
+    <a href="#" class="logo" data-aos="fade-down" data-aos-delay="50">L.M.A.D.S.</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="nav">
+      <li data-aos="fade-down" data-aos-delay="50"><a href="#home" onclick="toggleMenu();">Home</a></li>
+      <li data-aos="fade-down" data-aos-delay="100"><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li data-aos="fade-down" data-aos-delay="150"><a href="#system" onclick="toggleMenu();">Systems</a></li>
+      <li data-aos="fade-down" data-aos-delay="200"><a href="#service" onclick="toggleMenu();">Services</a></li>
+      <li data-aos="fade-down" data-aos-delay="250"><a href="#testimonials" onclick="toggleMenu();">Testimonials</a>
+      </li>
+      <li data-aos="fade-down" data-aos-delay="300"><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+
+  </header>
+
+  <!--Navigation bar end-->
+
+  <!--Landing Page start-->
+
+  <section class="home" id="home">
+    <div class="content">
+      <h2 data-aos="fade-up">L.M.A.D.S.</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        <em>Laundry Management And Delivery System</em>
+      </p>
+      <a href="#" class="btn-1" data-aos="fade-up" data-aos-delay="200">Menu</a>
+    </div>
+  </section>
+
+  <!--Landing Page end-->
+
+  <!--About section start-->
+  <section class="about" id="about">
+    <div class="container">
+
+
+      <!--About item start-->
+
+      <div class="row">
+        <div class="col50" data-aos="fade-right">
+          <div class="titleText">
+            <span>A</span>bout Us
+          </div>
+          <p>
+            With the ever-rising hustle of life, people are finding it extremely difficult
+            to go about their daily life chores while also maintaining dynamic careers.
+            Time is money; this maxim has gained more importance
+            than ever today when people and money always seem to be on the go.
+            But the chores of daily life cannot wait and to this
+            end, we provide you with a service that cuts one such hassler from your life.
+          </p>
+        </div>
+        <div class="col50">
+          <div class="imgBx" data-aos="fade-left">
+            <img src="../images/about.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col50" data-aos="fade-left">
+
+          <p>
+            Our L.M.A.D.S. service will pick up clothes from your house,
+            and deliver them back after thorough washing/dry-cleaning and ironing.
+            This would not only save our clients time but also money from buying
+            and maintaining expensive cleaning apparatus.
+          </p>
+        </div>
+        <div class="col50" data-aos="fade-right">
+          <div class="imgBx">
+            <img src="../images/about2.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col50" data-aos="fade-right">
+
+          <p>
+            Washing machines no doubt provide a lot of efficiency in
+            cleaning clothes at home, but the problem of time still
+            dawns on the daily hustlers who are building the lives of
+            their dreams. We take care of that for you! We will wash
+            your clothes for you while you chase your dreams. Next time
+            you ace that goal you are working towards, thank L.M.A.D.S.
+            for taking care of the stuff that’s trivial for achievers like you!
+          </p>
+        </div>
+        <div class="col50">
+          <div class="imgBx" data-aos="fade-left">
+            <img src="../images/about3.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--About item end-->
+    </div>
+  </section>
+
+  <!--About section end-->
+
+  <!--System Section start-->
+
+  <section class="system" id="system">
+    <div class="container">
+      <div class="title">
+        <h2 class="titleText" data-aos="fade-right">Our<span>S</span>ystem</h2>
+        <p data-aos="fade-left">Laundry management and delivery services.It provides delivery and manges your orders.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="timeline">
+          <div class="row">
+
+            <!--Timeline item start-->
+            <!--Administration-->
+            <div class="timeline-item">
+              <div class="timeline-item-inner" data-aos="fade-right">
+                <i class="icon"></i>
+                <span>Administration</span>
+                <h4>Admin</h4>
+                <p>Our laundry team and administration is very well versed in handling our client's clothes and take
+                  care of their belongings.</p>
+              </div>
+            </div>
+
+            <!--Washing stage-->
+
+            <div class="timeline-item">
+              <div class="timeline-item-inner" data-aos="fade-left">
+                <i class="icon"></i>
+                <span>Washing Stage</span>
+                <h4>Laundry attendant</h4>
+                <p>The picked up clothes are first taken to our nearest laundry centre &amp; washed
+                  thoroughly which cleans &amp; sanitizes the cloth completely and ensures that the clothes are
+                  delivered to the customer completely new.</p>
+              </div>
+            </div>
+
+            <!--Drying stage-->
+
+            <div class="timeline-item">
+              <div class="timeline-item-inner" data-aos="fade-right">
+                <i class="icon"></i>
+                <span>Drying Stage</span>
+                <h4>Drying Clerk</h4>
+                <p>In , the next step the cloth is completely dried using solar radiation which ensures
+                  that no further germs can thrive in the cloth after washing &amp; no traces of any water are left
+                  in the cloth fabric after the washing procedure.</p>
+              </div>
+            </div>
+
+            <!--Ironing Stage-->
+
+            <div class="timeline-item">
+              <div class="timeline-item-inner" data-aos="fade-left">
+                <i class="icon"></i>
+                <span>Ironing Stage</span>
+                <h4>Ironing Officer</h4>
+                <p>The next step involves removing the creases and folds in the cloth fabric &amp; ironing
+                  all the wrinkles out so that the cloth becomes more presentable &amp; so that the cloth becomes
+                  ready to be shipped back.</p>
+              </div>
+            </div>
+
+            <!--Packaging Stage-->
+
+            <div class="timeline-item">
+              <div class="timeline-item-inner" data-aos="fade-right">
+                <i class="icon"></i>
+                <span>Packaging Stage</span>
+                <h4>Packing Officer</h4>
+                <p>The last &amp; the final step involves packaging the clients clothes in an organized manner so that
+                  when delivered the clothes reach the desired party safely and mannerly.</p>
+              </div>
+            </div>
+
+            <!--Timeline item end-->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--System Section start-->
+
+  <!--Service Section start -->
+  <section class="service" id="service">
+    <div class="container">
+      <div class="title">
+        <h2 class="titleText" data-aos="fade-right">Our <span>S</span>ervice</h2>
+        <p data-aos="fade-left">Our company provides a wide options of services like cloth-wash ,dry cleaning,
+          sanitization services etc.<br>
+          We aspire to make L.M.A.D.S services your very own laundry assistant & organizer."Don't Say Laundry say
+          L.M.A.D.S"
+        </p>
+      </div>
+
+      <div class="menu">
+        <!--Service menu start -->
+
+        <!--Service menu item start 1-->
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="card">
+            <div class="boxcard">
+              <div class="imgBx">
+                <img src="../images/service1.jpg" alt="">
+              </div>
+
+              <div class="text">
+                <h3>T-Shirt</h3>
+                <label for="check" class="next">
+                  <a id="order">Order <i class="fa-solid fa-arrow-right"></i></a>
+                </label>
+              </div>
+              <input type="checkbox" id="check">
+
+              <!--Form Service start 1-->
+
+              <div class="contentBx">
+
+                <div class="content">
+                  <h2>Details</h2>
+                  <div class="col10">
+                    <h1>Customer : </h1><input type="text" placeholder="Name" id="name">
+                    <h1>Weight : </h1><input type="text" placeholder="Weight" id="weight">
+                  </div>
+
+                  <div class="col50">
+                    <div class="select">
+                      <select name="estimation" id="estimation">
+                        <option selected disabled>Estimation</option>
+                        <option value="fast">3 Hours</option>
+                        <option value="super">12 Hours</option>
+                        <option value="rare">1 Day</option>
+                        <option value="common">2 Day</option>
+                        <option value="broke">1 Month</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col100">
+                    <div class="select">
+                      <select name="service" id="service-item">
+                        <option selected disabled>Service</option>
+                        <option value="laundry">Laundry</option>
+                        <option value="ironing">Ironing</option>
+                        <option value="doubleService">Laundry & Ironing</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="end">
+                    <label for="check">
+                      <a class="back" id="back"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                    </label>
+                    <label for="confirm">
+                      <button class="confirm" id="confirm">Confirm <i class="fa-solid fa-arrow-right"></i></button>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!--Form service end 1-->
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--Service menu item end 1-->
+
+        <!--Service menu item start 2-->
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <div class="boxcard">
+              <div class="imgBx">
+                <img src="../images/service2.jpg" alt="">
+              </div>
+
+              <div class="text">
+                <h3>Blanket</h3>
+                <label for="check2" class="next">
+                  <a id="order">Order <i class="fa-solid fa-arrow-right"></i></a>
+                </label>
+              </div>
+              <input type="checkbox" id="check2">
+
+              <!--Form Service start2 -->
+
+              <div class="contentBx">
+
+                <div class="content">
+                  <h2>Details</h2>
+                  <div class="col10">
+                    <h1>Customer : </h1><input type="text" placeholder="Name" id="name1">
+                    <h1>Pcs : </h1><input type="text" placeholder="Pcs" id="pcs">
+                  </div>
+
+                  <div class="col50">
+                    <div class="select">
+                      <select name="estimation" id="estimation1">
+                        <option selected disabled>Estimation</option>
+                        <option value="fast">3 Hours</option>
+                        <option value="super">12 Hours</option>
+                        <option value="rare">1 Day</option>
+                        <option value="common">2 Day</option>
+                        <option value="broke">1 Month</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col100">
+                    <div class="select">
+                      <select name="service" id="service-item1">
+                        <option selected disabled>Service</option>
+                        <option value="laundry">Laundry</option>
+                        <option value="DryCleaning">Dry Cleaning</option>
+                        <option value="doubleService">Both</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="end">
+                    <label for="check2">
+                      <a class="back" id="back"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                    </label>
+                    <label for="confirm2">
+                      <button class="confirm" id="confirm1">Confirm <i class="fa-solid fa-arrow-right"></i></button>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!--Form service end2 -->
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--Service menu item end 2-->
+
+        <!--Service menu item start3 -->
+
+        <div class="row" data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <div class="boxcard">
+              <div class="imgBx">
+                <img src="../images/service3.jpg" alt="">
+              </div>
+
+              <div class="text">
+                <h3>Shoes</h3>
+                <label for="check3" class="next">
+                  <a id="order">Order <i class="fa-solid fa-arrow-right"></i></a>
+                </label>
+              </div>
+              <input type="checkbox" id="check3">
+
+              <!--Form Service start 3-->
+              <!--<form action="" id="serviceForm">-->
+              <div class="contentBx">
+
+                <div class="content">
+                  <h2>Details</h2>
+                  <div class="col10">
+                    <h1>Customer : </h1><input type="text" placeholder="Name" id="name2">
+                    <h1>Pcs : </h1><input type="text" placeholder="Pcs" id="pcs1">
+                  </div>
+
+                  <div class="col50">
+                    <div class="select">
+                      <select name="estimation" id="estimation2">
+                        <option selected disabled>Estimation</option>
+                        <option value="fast">3 Hours</option>
+                        <option value="super">12 Hours</option>
+                        <option value="rare">1 Day</option>
+                        <option value="common">2 Day</option>
+                        <option value="broke">1 Month</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col100">
+                    <div class="select">
+                      <select name="service" id="service-item2">
+                        <option selected disabled>Service</option>
+                        <option value="laundry">Cleaning</option>
+                        <option value="ironing">Repair & Restoration</option>
+                        <option value="doubleService">Protection &Nourishment</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="end">
+                    <label for="check3">
+                      <a class="back" id="back"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                    </label>
+                    <label for="confirm3">
+                      <button class="confirm" id="confirm2">Confirm <i class="fa-solid fa-arrow-right"></i></button>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- </form>-->
+
+
+              <!--Form service end 3-->
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--Service menu item end 3-->
+
+        <!--Service menu end -->
+      </div>
+    </div>
+  </section>
+
+  <!--Service Section End-->
+
+  <!--Testimonial section start-->
+  <section class="testimonials" id="testimonials">
+    <div class="title">
+      <h2 class="titleText" data-aos="fade-right">Their <span>T</span>estimonials</h2>
+      <p data-aos="fade-left"> L.M.A.D.S is an organisation that specialises in laundry management & delivery services.<br>We always tell you don't trust us , Trust our customers : "First Try , Then Believe".</p>
+    </div>
+
+    <div class="content">
+
+      <!--Test item start-->
+
+      <div class="box" data-aos="fade-up" data-aos-delay="100">
+        <div class="imgBx">
+          <img src="../images/testi1.jpg" alt="">
+        </div>
+        <div class="text">
+          <p>L. M. A. D. S is the best laundry companion ever.</p>
+          <h3>Rachel Smith</h3>
+        </div>
+
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="200">
+        <div class="imgBx">
+          <img src="../images/testi2.jpg" alt="">
+        </div>
+        <div class="text">
+          <p>Laundry couldn't have been easier without L.M.A.D.S!</p>
+          <h3>John Wick</h3>
+        </div>
+
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+        <div class="imgBx">
+          <img src="../images/testi3.jpg" alt="">
+        </div>
+        <div class="text">
+          <p>Great App! Really Helps with my Laundry chores</p>
+          <h3>Nadia Jones</h3>
+        </div>
+
+      </div>
+
+
+      <!--Test item end-->
+    </div>
+
+  </section>
+
+  <!--Testimonial Section End-->
+
+  <!--Contact Section start-->
+  <section class="contact" id="contact">
+    <div class="contact">
+
+      <div class="container">
+
+        <div class="title">
+          <h2 class="titletext" data-aos="fade-right">Contact <span>U</span>s</h2>
+          <p data-aos="fade-left">Here are the various ways to contact us & avail our services</p>
+        </div>
+
+        <div class="box">
+
+          <div class="contactForm" data-aos="fade-right" data-aos-delay="100">
+
+            <h3>Send Message</h3>
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="150">
+              <input type="text" placeholder="Name">
+            </div>
+
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="200">
+              <input type="text" placeholder="Email">
+            </div>
+
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="250">
+              <textarea placeholder="Message"></textarea>
+            </div>
+
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="300">
+              <input type="submit" class="btn" value="Send">
+            </div>
+
+          </div>
+
+          <div class="map" data-aos="fade-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.988388657244!2d77.37298485!3d28.6301101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5513b192a73%3A0xa8ccf1fe0403bee1!2sJAYPEE%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY%2C%20Block%20A%2C%20Industrial%20Area%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201309!5e0!3m2!1sen!2sin!4v1682070855649!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="icon-container" data-aos="fade-up">
+
+            <div class="icons" data-aos="fade-up" data-aos-delay="100">
+              <span>Address: </span>
+              <p>Uttar pradesh, India</p>
+
+            </div>
+
+            <div class="icons" data-aos="fade-up" data-aos-delay="200">
+              <span>Email: </span>
+              <p>badcompany@gmail.com</p>
+            </div>
+
+            <div class="icons" data-aos="fade-up" data-aos-delay="300">
+              <span>Phone: </span>
+              <p>+91 77540 92981</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--Contact Section end-->
+
+  <!--Copyright-->
+  <div class="cp">
+    <p>&copy; 2023 <a href="#">TheBadCompany Ltd</a>. All Rights Reserved</p>
+  </div>
+
+  <!--JS link-->
+
+
+  <!--AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    AOS.init({
+      duration: 600,
+    })
+  </script>
+
+
+
+
+  <!--firebase-->
+  <!-- 
+<script src="https://www.gstatic.com/firebasejs//firebase-app.js"></script>
+
+<script src="https://firebase.google.com/docs/web/setup#available-libraries"></script> -->
+
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
+  <!-- <script type="module" src="https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+  <script src="\script.js"></script>
+</body>
+
+</html>
